@@ -29,3 +29,5 @@ runs:
         channel: 'stable'
     - run: yarn --version || npm install -g yarn
       shell: bash
+    - run: yarn config set -- --mutex network
+      shell: bash
